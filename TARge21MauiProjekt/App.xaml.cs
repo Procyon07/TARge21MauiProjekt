@@ -20,7 +20,7 @@ public partial class App : Application
         InitializeComponent();
 
         const int WindowWidth = 960;
-        const int WindowHeight = 540;
+        const int WindowHeight = 1600;
 
 #if WINDOWS
 	Microsoft.Maui.Handlers.WindowHandler.Mapper.AppendToMapping(nameof(IWindow), (Handler, view) => 
