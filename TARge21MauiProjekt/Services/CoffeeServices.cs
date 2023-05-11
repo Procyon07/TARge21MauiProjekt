@@ -106,7 +106,7 @@ namespace Services
 
             return randomizedCoffees.Take(2).ToList();
         }
-        public static List<Coffee> GetAllPlanets()
+        public static List<Coffee> GetAllCoffees()
         => coffees;
 
         public static Coffee GetPlanet(string coffeeName)
