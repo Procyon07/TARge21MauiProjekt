@@ -21,9 +21,20 @@ namespace Services
                     "https://www.acouplecooks.com/wp-content/uploads/2020/10/how-to-make-cappuccino-005.jpg",
                     "https://kawazmleczkiem.pl/app/uploads/2020/12/CAPPUCINO-1024x682-min-1024x682.jpg",
                     "https://noir.web.id/wp-content/uploads/2022/04/jual-cappucino-terdekat.jpg"
-
                 }
             }
         };
+        public static List<Coffee> GetFeaturedCoffees()
+        {
+            var random = new Random();
+            var randomizedCoffees = coffees.OrderBy(item => random.Next());
+
+            return randomizedCoffees.Take(2).ToList();
+        }
+        public static List<Coffee> GetAllPlanets()
+        => coffees;
+
+        public static Coffee GetPlanet(string coffeeName)
+            => coffees.Where(_coffee => _coffee.Name == coffeeName).FirstOrDefault();
     }
 }
