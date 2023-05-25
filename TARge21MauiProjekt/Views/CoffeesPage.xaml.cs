@@ -36,4 +36,13 @@ public partial class CoffeesPage : ContentPage
         _ = MainContentGrid.ScaleTo(1, AnimationDuration);
         await MainContentGrid.TranslateTo(0, 0, AnimationDuration, Easing.CubicIn);
     }
+    async void AboutUs_Clicked(System.Object sender, System.EventArgs e)
+        => Application.Current.MainPage = new NavigationPage(new AboutUsPage());
+
+    async void History_Clicked(System.Object sender, System.EventArgs e)
+        => Application.Current.MainPage = new NavigationPage(new CoffeeHistory());
+    async void BackButton_Clicked(System.Object sender, System.EventArgs e)
+    {
+        await Navigation.PopAsync();
+    }
 }
