@@ -133,41 +133,6 @@
                 <VerticalStackLayout
                     Spacing="12">
 
-                    <Border
-                        Padding="12,4"
-                        BackgroundColor="#33CCCCCC"
-                        Stroke="{StaticResource BorderColor}"
-                        HorizontalOptions="Fill"
-                        Margin="0,0,24,0"
-                        HeightRequest="48">
-                        <Border.StrokeShape>
-                            <RoundRectangle CornerRadius="6"/>
-                        </Border.StrokeShape>
-
-                        <Grid
-                            HorizontalOptions="Fill"
-                            VerticalOptions="Center"
-                            ColumnDefinitions="Auto,*"
-                            ColumnSpacing="16">
-
-                            <Image
-                                WidthRequest="18"
-                                HeightRequest="18"
-                                Source="imgsearch.png"
-                                Grid.Column="0"
-                                VerticalOptions="Center" />
-
-                            <Label
-                                Text="Search for your favorite Coffee"
-                                Grid.Column="1"
-                                VerticalOptions="Center"
-                                VerticalTextAlignment="Center"
-                                Style="{StaticResource MenuLabelStyle}" />
-
-                        </Grid>
-
-                    </Border>
-
                     <Label
                         Style="{StaticResource PageSubHeaderStyle}"
                         Margin="0,12,0,0">
@@ -196,18 +161,17 @@
                                 x:DataType="models:Coffee">
                                 <Border
                                     VerticalOptions="Fill"
-                                    WidthRequest="220"
+                                    WidthRequest="250"
                                     StrokeThickness="0"
-                                    Background="{Binding Background}"
-                                    Padding="20">
+                                    Padding="10">
 
                                     <Border.StrokeShape>
-                                        <RoundRectangle CornerRadius="24"/>
+                                        <RoundRectangle CornerRadius="12"/>
                                     </Border.StrokeShape>
 
                                     <Grid
                                         RowDefinitions="*,Auto,Auto"
-                                        RowSpacing="4">
+                                        RowSpacing="2">
 
                                         <Image
                                             Grid.Row="0"
@@ -220,12 +184,10 @@
                                             Grid.Row="1"
                                             Style="{StaticResource FeaturedCoffeeHeaderStyle}"
                                             Text="{Binding Name}"
-                                            Margin="0,8,0,0"/>
+                                            Margin="0,5,0,10"
+                                            HorizontalTextAlignment="Center"
+                                            />
 
-                                        <Label
-                                            Grid.Row="2"
-                                            Style="{StaticResource FeaturedCoffeeHeaderSubtitleStyle}"
-                                            Text="{Binding Price}" />
 
                                     </Grid>
 
@@ -264,10 +226,9 @@
                                 x:DataType="models:Coffee">
                                 <Border
                                     VerticalOptions="Fill"
-                                    WidthRequest="140"
+                                    WidthRequest="200"
                                     StrokeThickness="0"
-                                    Background="{Binding Background}"
-                                    Padding="16">
+                                    Padding="4">
 
                                     <Border.StrokeShape>
                                         <RoundRectangle CornerRadius="16"/>
@@ -280,7 +241,6 @@
                                         <Image
                                             Grid.Row="0"
                                             Source="{Binding HeroImage}"
-                                            Rotation="-30"
                                             Aspect="AspectFit"                                        
                                             VerticalOptions="Fill"
                                             HorizontalOptions="Fill"/>
@@ -289,7 +249,8 @@
                                             Grid.Row="1"
                                             Style="{StaticResource AllCoffeeHeaderStyle}"
                                             Text="{Binding Name}"
-                                            Margin="0,4,0,0"/>
+                                            HorizontalTextAlignment="Center"
+                                            Margin="0,4,0,8"/>
 
                                     </Grid>
 
@@ -347,7 +308,7 @@
                         Grid.Column="1"
                         HorizontalOptions="Center" />
                     <Label
-                        Text="Favorite"
+                        Text="About Us"
                         Grid.Row="1"
                         Grid.Column="1"
                         HorizontalOptions="Center"
