@@ -84,7 +84,7 @@
 
                 <Label
                     Style="{StaticResource PageHeaderSubtitleStyle}"
-                    Text="The milky way galaxy"/>
+                    Text="The World of Coffee!"/>
 
             </VerticalStackLayout>
 
@@ -183,8 +183,8 @@
                         x:Name="lstPopularCoffees"
                         HeightRequest="280"
                         SelectionMode="Single"
+                        SelectionChanged="Coffees_SelectionChanged"                       
                         >
-                        <!--SelectionChanged="Coffees_SelectionChanged"-->                        
                         <CollectionView.ItemsLayout>
                             <LinearItemsLayout
                                 Orientation="Horizontal"
@@ -212,7 +212,6 @@
                                         <Image
                                             Grid.Row="0"
                                             Source="{Binding HeroImage}"
-                                            Rotation="-30"
                                             Aspect="AspectFit"
                                             VerticalOptions="Fill"
                                             HorizontalOptions="Fill"/>
@@ -252,8 +251,8 @@
                         x:Name="lstAllCoffees"
                         HeightRequest="160"
                         SelectionMode="Single"
+                        SelectionChanged="Coffees_SelectionChanged"                       
                         >
-                        <!--SelectionChanged="Coffees_SelectionChanged"-->                        
                         <CollectionView.ItemsLayout>
                             <LinearItemsLayout
                                 Orientation="Horizontal"
