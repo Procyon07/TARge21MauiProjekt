@@ -18,10 +18,10 @@ public partial class CoffeesPage : ContentPage
     {
         await CloseMenu();
     }
-    //async void Coffees_SelectionChanged(System.Object sender, Microsoft.Maui.Controls.SelectionChangedEventArgs e)
-    //{
-    //    await Navigation.PushAsync(new CoffeeDetailsPage(e.CurrentSelection.First() as Coffee));
-    //}
+    async void Coffees_SelectionChanged(System.Object sender, Microsoft.Maui.Controls.SelectionChangedEventArgs e)
+    {
+        await Navigation.PushAsync(new CoffeeDetailsPage(e.CurrentSelection.First() as Coffee));
+    }
 
     async void ProfilePic_Clicked(System.Object sender, System.EventArgs e)
     {

@@ -6,7 +6,7 @@ namespace Services
 {
     internal class CoffeeServices
     {
-        private static List<Coffee> coffees = new()
+        private static readonly List<Coffee> coffees = new()
         {
             new()
             {
