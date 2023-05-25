@@ -6,7 +6,7 @@ namespace Services
 {
     internal class CoffeeServices
     {
-        private static List<Coffee> coffees = new()
+        private static readonly List<Coffee> coffees = new()
         {
             new()
             {
@@ -106,7 +106,7 @@ namespace Services
 
             return randomizedCoffees.Take(2).ToList();
         }
-        public static List<Coffee> GetAllPlanets()
+        public static List<Coffee> GetAllCoffees()
         => coffees;
 
         public static Coffee GetPlanet(string coffeeName)
