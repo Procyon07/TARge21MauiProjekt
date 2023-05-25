@@ -7,7 +7,7 @@
         <Image
             x:Name="imgLatte"
             Opacity="50"
-            Source="latte.jpg"
+            Source="latte.png"
             Aspect="AspectFit"
             VerticalOptions="Start"
             HorizontalOptions="End"/>

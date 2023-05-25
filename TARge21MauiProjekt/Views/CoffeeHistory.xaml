@@ -8,5 +8,14 @@
             Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <ImageButton
+            WidthRequest="24"
+            HeightRequest="24"
+            Source="imgback.png"
+            Grid.Row="0"
+            Grid.Column="0"
+            HorizontalOptions="Start"
+            VerticalOptions="Center"
+            Clicked="BackButton_Clicked" />
     </VerticalStackLayout>
 </ContentPage>
