@@ -11,4 +11,8 @@ public partial class CoffeeDetailsPage : ContentPage
 	{
 		await Navigation.PopAsync();
 	}
+    async void BackButton_Clicked(System.Object sender, System.EventArgs e)
+    {
+        await Navigation.PopAsync();
+    }
 }
