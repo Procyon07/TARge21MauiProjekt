@@ -2,11 +2,119 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Views.CoffeeDetailsPage"
-             Title="CoffeeDetailsPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             xmlns:models="clr-namespace:Models"
+             Title="CoffeeDetailsPage"
+             x:DataType="models:Coffee"
+             >
+    <Grid
+        Margin="24,52,24,0"
+        IgnoreSafeArea="{OnPlatform Android=False, iOS=True}"
+        ColumnDefinitions="*,*"
+        RowDefinitions="Auto,*">
+
+        <ImageButton
+            WidthRequest="24"
+            HeightRequest="24"
+            Source="imgback.png"
+            Grid.Row="0"
+            Grid.Column="0"
+            HorizontalOptions="Start"
+            VerticalOptions="Center"
+            Clicked="BackButton_Clicked" />
+
+        <ImageButton
+            WidthRequest="24"
+            HeightRequest="24"
+            Source="imgmenu.png"
+            Grid.Row="0"
+            Grid.Column="1"
+            HorizontalOptions="End"
+            VerticalOptions="Center" />
+
+
+        <ScrollView
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            HorizontalScrollBarVisibility="Never"
+            VerticalScrollBarVisibility="Never"
+            Margin="0,16,0,0">
+
+            <VerticalStackLayout
+                Spacing="18">
+
+                <Image
+                    Source="{Binding HeroImage}"
+                    Aspect="AspectFit"
+                    HorizontalOptions="Fill"
+                    HeightRequest="240"
+                    Margin="24,0" />
+
+                <Label
+                    Style="{StaticResource CoffeeHeaderStyle}"
+                    Text="{Binding Name}"
+                    Margin="0,-24,0,0"/>
+
+                <Label
+                    Margin="0,-12,0,0"
+                    Style="{StaticResource CoffeeHeaderSubtitleStyle}"
+                    Text="{Binding Price}" />
+
+                <Rectangle
+                    HorizontalOptions="Fill"
+                    HeightRequest="2"
+                    Stroke="Transparent"
+                    Fill="{StaticResource LightBorderColor}" />
+
+                <Label
+                    Style="{StaticResource CoffeeDetailsTextStyle}"
+                    LineBreakMode="WordWrap"
+                    Text="{Binding Description}" />
+
+
+                <Rectangle
+                    HorizontalOptions="Fill"
+                    HeightRequest="2"
+                    Stroke="Transparent"
+                    Fill="{StaticResource LightBorderColor}" />
+
+                <Label
+                    Style="{StaticResource CoffeeHeaderSubtitleStyle}"
+                    Text="Gallery" />
+
+                <CollectionView
+                    Margin="0,-6,0,0"
+                    HeightRequest="360"
+                    ItemsSource="{Binding Images}">
+
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout
+                            Orientation="Vertical"
+                            ItemSpacing="16" />
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Image
+                                Source="{Binding .}"
+                                Aspect="AspectFill"
+                                HorizontalOptions="Fill"
+                                VerticalOptions="Fill"
+                                WidthRequest="360"
+                                HeightRequest="360">
+                                <Image.Clip>
+                                    <RoundRectangleGeometry
+                                        Rect="0,0,360,360"
+                                        CornerRadius="16" />
+                                </Image.Clip>
+                            </Image>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+
+                </CollectionView>
+
+            </VerticalStackLayout>
+
+        </ScrollView>
+    </Grid>
 </ContentPage>

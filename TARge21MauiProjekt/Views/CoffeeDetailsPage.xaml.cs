@@ -7,12 +7,8 @@ public partial class CoffeeDetailsPage : ContentPage
 		InitializeComponent();
 		this.BindingContext = coffee;
 	}
-	async void BackButton_Clicked(System.Object senver, System.EventArgs e)
+	async void BackButton_Clicked(System.Object sender, System.EventArgs e)
 	{
 		await Navigation.PopAsync();
 	}
-    async void BackButton_Clicked(System.Object sender, System.EventArgs e)
-    {
-        await Navigation.PopAsync();
-    }
 }
