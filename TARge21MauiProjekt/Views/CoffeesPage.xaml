@@ -283,48 +283,35 @@
                     HorizontalOptions="Fill"
                     VerticalOptions="Center"
                     RowDefinitions="Auto,Auto"
-                    ColumnDefinitions="*,*,*"
+                    ColumnDefinitions="*,*"
                     RowSpacing="6">
-
-                    <Image
-                        WidthRequest="30"
-                        HeightRequest="30"
-                        Source="imgexplore.png"
-                        Grid.Row="0"
-                        Grid.Column="0"
-                        HorizontalOptions="Center" />
-                    <Label
-                        Text="Explore"
-                        Grid.Row="1"
-                        Grid.Column="0"
-                        HorizontalOptions="Center"
-                        Style="{StaticResource MenuLabelStyle}" />
+                    
 
                     <Image
                         WidthRequest="30"
                         HeightRequest="30"
                         Source="imgfavorite.png"
                         Grid.Row="0"
-                        Grid.Column="1"
-                        HorizontalOptions="Center" />
+                        Grid.Column="0"
+                        HorizontalOptions="Center"/>
                     <Label
                         Text="About Us"
                         Grid.Row="1"
-                        Grid.Column="1"
+                        Grid.Column="0"
                         HorizontalOptions="Center"
                         Style="{StaticResource MenuLabelStyle}" />
 
                     <Image
                         WidthRequest="30"
                         HeightRequest="30"
-                        Source="imgprofile.png"
+                        Source="history.png"
                         Grid.Row="0"
-                        Grid.Column="2"
+                        Grid.Column="1"
                         HorizontalOptions="Center" />
                     <Label
-                        Text="Profile"
+                        Text="History"
                         Grid.Row="1"
-                        Grid.Column="2"
+                        Grid.Column="1"
                         HorizontalOptions="Center"
                         Style="{StaticResource MenuLabelStyle}" />
 
