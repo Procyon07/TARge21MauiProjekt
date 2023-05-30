@@ -82,6 +82,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\kohvi.jpg" />
+	  <None Remove="Resources\Images\kohvi1.jpg" />
+	  <None Remove="Resources\Images\kohvi2.jpg" />
+	  <None Remove="Resources\Images\kohvi3.jpg" />
+	  <None Remove="Resources\Images\kohvi4.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <PackageReference Include="Microsoft.UI.Xaml" Version="2.8.2" />
 	</ItemGroup>
 
