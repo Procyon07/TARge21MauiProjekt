@@ -107,11 +107,11 @@
 
 
                 <Image
-                    VerticalOptions="Center"
-                    HorizontalOptions="Center"
-                    WidthRequest="90"
-                    HeightRequest="80"
-                    Source="profilepic.png">
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    WidthRequest="40"
+                    HeightRequest="60"
+                    Source="coffee.png">
                     <Image.Clip>
                         <EllipseGeometry
                             Center="25,25"
@@ -267,7 +267,7 @@
 
             <Border
                 Padding="16,0"
-                BackgroundColor="SandyBrown"
+                BackgroundColor="#0079BF"
                 Stroke="{StaticResource BorderColor}"
                 HorizontalOptions="Fill"
                 VerticalOptions="End"

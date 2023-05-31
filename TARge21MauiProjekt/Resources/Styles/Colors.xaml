@@ -30,9 +30,9 @@
     <SolidColorBrush x:Key="Gray600Brush" Color="{StaticResource Gray600}"/>
     <SolidColorBrush x:Key="Gray900Brush" Color="{StaticResource Gray900}"/>
     <SolidColorBrush x:Key="Gray950Brush" Color="{StaticResource Gray950}"/>
-    <Color x:Key="PageBackgroundColor">#80461B</Color>
+    <Color x:Key="PageBackgroundColor">#4E3524</Color>
     <Color x:Key="FrameBackgroundColor">#F1EFF0</Color>
-    <Color x:Key="ButtonBackgroundColor">#FFDEA</Color>
+    <Color x:Key="ButtonBackgroundColor">#0079BF</Color>
     <Color x:Key="BorderColor">Transparent</Color>
     <Color x:Key="LightBorderColor">#d5d5d5</Color>
     <Color x:Key="LightTextColor">#d5d5d5</Color>

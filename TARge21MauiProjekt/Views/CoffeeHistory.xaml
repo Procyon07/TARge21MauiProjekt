@@ -63,7 +63,7 @@
                     Margin="30,30,30,30">
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="Googling the word coffee comes up with almost 3.2 billion matches." FontAttributes="Bold" />
+                            <Span Text="Googling the word coffee comes up with almost 3.2 billion matches." FontAttributes="Bold" TextColor="White"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
@@ -81,8 +81,8 @@
                     Margin="30,20,20,30">
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="Legends" FontAttributes="Bold" TextColor="Plum" />
-                            <Span Text=":  " FontAttributes="Bold" TextColor="Plum"/>
+                            <Span Text="Legends" FontAttributes="Bold" TextColor="#0079BF" />
+                            <Span Text=":  " FontAttributes="Bold" TextColor="#0079BF"/>
                             <Span Text="There are many legends about the discovery of coffee. One of the most famous of these attributes its honour to the man called Kaldi from the region of Caffa from Ethiopia. Kaldi was trying to put his goats to sleep for so long time. The goats had been chewing the shiny leaves and red berries growing on the branches of the coffee tree. The goat herd also tasted the berries and soon became just as bright. Some of the berries, however, he threw away into the fire, which gave off a delicious aroma. Someone later suggested a strong flavour to soften the taste the idea of crushing the berries and mixing them with hot water. And so the coffee drink was born." />
                         </FormattedString>
                     </Label.FormattedText>
@@ -102,8 +102,8 @@
                     Margin="30,20,20,30">
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="Roots of Coffee" FontAttributes="Bold" TextColor="Plum" />
-                            <Span Text=":  " FontAttributes="Bold" TextColor="Plum"/>
+                            <Span Text="Roots of Coffee" FontAttributes="Bold" TextColor="#0079BF" />
+                            <Span Text=":  " FontAttributes="Bold" TextColor="#0079BF"/>
                             <Span Text="Although it is very difficult to pinpoint exactly when coffee was first used, it is thought to have happened in 9th century Ethiopia. By the 15th century, coffee had also reached Arabia. The Arabs were the first to roast coffee beans. They were also the first to make coffee in the form we drink it today. The Arab woman had only one way to divorce her husband - if he did not have enough coffee to offer her. The Arabs were the first to use the word 'qahva', from which the Turkish coined their own word for 'coffee' and later, when it reached the Netherlands, it became 'koffie'." />
                         </FormattedString>
                     </Label.FormattedText>
@@ -123,8 +123,8 @@
                     Margin="30,20,20,30">
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="Coffee countries and coffee sorts" FontAttributes="Bold" TextColor="Plum" />
-                            <Span Text=":  " FontAttributes="Bold" TextColor="Plum"/>
+                            <Span Text="Coffee countries and coffee sorts" FontAttributes="Bold" TextColor="#0079BF" />
+                            <Span Text=":  " FontAttributes="Bold" TextColor="#0079BF"/>
                             <Span Text="Coffee is produced in around 60 countries. The largest of these are: Brazil, Colombia, Vietnam, Indonesia and India. For example, Brazil exports about 23% of its coffee to the world. Brazil exports around 23 million bags of coffee per year, with one bag weighing 60 kg. In fact, more than 20 million coffee growers earn a living every day from their coffee. There are more than 60 coffee varieties, but only two are of commercial importance: arabica and robusta. Arabica originated in Ethiopia, but is now grown all over the world. It accounts for about 65% of the world's production. of the world's coffee production. The remaining 35% is taken up by robusta. The flavour of arabica is milder and has more flavour nuances than robusta. Robusta has a strong flavour coffee blends with a dark roast, such as espresso." />
                         </FormattedString>
                     </Label.FormattedText>
@@ -144,8 +144,8 @@
                     Margin="30,20,20,30">
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="Less depression, more happiness" FontAttributes="Bold" TextColor="Plum"/>
-                            <Span Text=":  " FontAttributes="Bold" TextColor="Plum"/>
+                            <Span Text="Less depression, more happiness" FontAttributes="Bold" TextColor="#0079BF"/>
+                            <Span Text=":  " FontAttributes="Bold" TextColor="#0079BF"/>
                             <Span Text="There has been much speculation about whether coffee is harmful or beneficial. According to scientists, it has been established that yes - it can kill. But there's no need to be scared, it's almost impossible to drink so much coffee in such a short time. The amount of caffeine that is lethal to humans is equivalent to 100 cups of coffee. In addition, scientists believe that 2-3 cups of coffee a day is safe and can even be beneficial in many cases. For example, we can talk about the stimulant effect of the drink. It has been scientifically proven that women who drink coffee regularly have a 20% lower risk of depression than those who do not. " />
                         </FormattedString>
                     </Label.FormattedText>
