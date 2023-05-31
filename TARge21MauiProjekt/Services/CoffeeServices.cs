@@ -14,9 +14,9 @@ namespace Services
                 Description = "The perfect blend of creamy froth, bold espresso, and a sprinkle of cocoa magic, all in one deliciously indulgent cup",
                 Price = 4.99,
                 HeroImage = "e_cappuccino.png",
-                AccentColorStart = Color.FromArgb("#0c293d"),
-                AccentColorEnd = Color.FromArgb("#26abe0"),
-                Images = new ()
+				AccentColorStart = Color.FromArgb("#0c293d"),
+				AccentColorEnd = Color.FromArgb("#26abe0"),
+				Images = new ()
                 {
                     "https://www.acouplecooks.com/wp-content/uploads/2020/10/how-to-make-cappuccino-005.jpg",
                     "https://kawazmleczkiem.pl/app/uploads/2020/12/CAPPUCINO-1024x682-min-1024x682.jpg",
@@ -89,9 +89,9 @@ namespace Services
                 Description = "Drip coffee is the reliable and satisfying way to enjoy classic coffee flavors.",
                 Price = 3.99,
                 HeroImage = "e_dripcoffee.png",
-                AccentColorStart = Color.FromArgb("#0c293d"),
-                AccentColorEnd = Color.FromArgb("#26abe0"),
-                Images = new ()
+				AccentColorStart = Color.FromArgb("#0c293d"),
+				AccentColorEnd = Color.FromArgb("#26abe0"),
+				Images = new ()
                 {
                     "https://www.roastycoffee.com/wp-content/uploads/shutterstock_1027443565-800x534.jpg",
                     "https://minimalistbaker.com/wp-content/uploads/2019/01/Step-by-Step-instructions-for-How-to-Make-Pourover-Coffee-minimalistbaker-coffee-4.jpg",
