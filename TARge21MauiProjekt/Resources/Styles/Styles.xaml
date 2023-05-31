@@ -139,7 +139,7 @@
 
     <Style TargetType="Label" x:Key="MenuLabelStyle" BasedOn="{StaticResource BaseRegularLabelStyle}">
         <Setter Property="FontSize" Value="14" />
-        <Setter Property="TextColor" Value="#CCCCCC" />
+        <Setter Property="TextColor" Value="Black" />
     </Style>
 
     <Style TargetType="Label" x:Key="CoffeeHeaderStyle" BasedOn="{StaticResource BaseBoldLabelStyle}">

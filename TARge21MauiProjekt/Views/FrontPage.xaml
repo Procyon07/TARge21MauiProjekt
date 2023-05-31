@@ -7,8 +7,8 @@
         <Image
             x:Name="imgLatte"
             Opacity="50"
-            Source="latte.png"
-            Aspect="AspectFit"
+            Source="disain1.jpg"
+            Aspect="AspectFill"
             VerticalOptions="Start"
             HorizontalOptions="End"/>
         <Grid>       
@@ -33,7 +33,7 @@
                         HorizontalOptions="Center"
                         HorizontalTextAlignment="Center"
                         Style="{StaticResource IntroPageHeaderStyle}"
-                        Text="Hello!"/>
+                        Text="Dear visitor!"/>
 
 
                     <Label
@@ -45,7 +45,7 @@
 
                     <Button
                         Style="{StaticResource ButtonStyle}"
-                        Text="Welcome!"
+                        Text="Enter the Shop"
                         HorizontalOptions="Center"
                         Margin="0,12,0,6"
                         Clicked="Welcome_Clicked"/>
