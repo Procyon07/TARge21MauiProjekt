@@ -37,7 +37,7 @@
             Margin="0,16,0,0">
 
             <VerticalStackLayout>
-                <Image Source="kohvi5.jpg" 
+                <Image Source="kohvi11.jpg" 
                        Aspect="AspectFit"
                        HorizontalOptions="Fill"
                        HeightRequest="240"
@@ -88,7 +88,7 @@
                     </Label.FormattedText>
                 </Label>
                 <Image 
-                    Source="kohvi6.jpg"
+                    Source="kohvi12.jpg"
                     Aspect="AspectFill"
                     HorizontalOptions="Fill"
                     VerticalOptions="Fill"
@@ -109,7 +109,7 @@
                     </Label.FormattedText>
                 </Label>
                 <Image 
-                    Source="kohvi7.jpg"
+                    Source="kohvi13.jpg"
                     Aspect="AspectFill"
                     HorizontalOptions="Fill"
                     VerticalOptions="Fill"
@@ -130,7 +130,7 @@
                     </Label.FormattedText>
                 </Label>
                 <Image 
-                    Source="kohvi9.jpg"
+                    Source="kohvi10.jpg"
                     Aspect="AspectFill"
                     HorizontalOptions="Fill"
                     VerticalOptions="Fill"
@@ -151,7 +151,7 @@
                     </Label.FormattedText>
                 </Label>
                 <Image 
-                    Source="kohvi8.jpg"
+                    Source="kohvi14.jpg"
                     Aspect="AspectFill"
                     HorizontalOptions="Fill"
                     VerticalOptions="Fill"
