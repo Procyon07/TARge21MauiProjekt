@@ -13,7 +13,7 @@ namespace Services
                 Name = "Cappucino",
                 Description = "The perfect blend of creamy froth, bold espresso, and a sprinkle of cocoa magic, all in one deliciously indulgent cup",
                 Price = 4.99,
-                HeroImage = "cappucino.png",
+                HeroImage = "e_cappuccino.png",
                 AccentColorStart = Color.FromArgb("#0c293d"),
                 AccentColorEnd = Color.FromArgb("#26abe0"),
                 Images = new ()
@@ -28,7 +28,7 @@ namespace Services
                 Name = "Espresso",
                 Description = "Espresso is a small but mighty coffee shot that packs a punch of bold, rich flavor. ",
                 Price = 3.99,
-                HeroImage = "espresso.png",
+                HeroImage = "e_espresso.png",
                 AccentColorStart = Color.FromArgb("#0c293d"),
                 AccentColorEnd = Color.FromArgb("#26abe0"),
                 Images = new ()
@@ -43,7 +43,7 @@ namespace Services
                 Name = "Americano",
                 Description = "Americano is a coffee superhero that combines the strength of espresso and the simplicity of water.",
                 Price = 5.50,
-                HeroImage = "americano.png",
+                HeroImage = "e_americano.png",
                 AccentColorStart = Color.FromArgb("#0c293d"),
                 AccentColorEnd = Color.FromArgb("#26abe0"),
                 Images = new ()
@@ -58,7 +58,7 @@ namespace Services
                 Name = "Latte",
                 Description = "Latte, espresso with steamed milk, is a rich and creamy treat that'll make you smile.",
                 Price = 5.99,
-                HeroImage = "latte.png",
+                HeroImage = "ee_latte.png",
                 AccentColorStart = Color.FromArgb("#0c293d"),
                 AccentColorEnd = Color.FromArgb("#26abe0"),
                 Images = new ()
@@ -73,7 +73,7 @@ namespace Services
                 Name = "Macchiato",
                 Description = "Macchiato, a mini espresso with milk foam, is like a little treat with a fun design.",
                 Price = 4.99,
-                HeroImage = "macchiato.png",
+                HeroImage = "e_macchiato.png",
                 AccentColorStart = Color.FromArgb("#0c293d"),
                 AccentColorEnd = Color.FromArgb("#26abe0"),
                 Images = new ()
@@ -88,7 +88,7 @@ namespace Services
                 Name = "Drip Coffee",
                 Description = "Drip coffee is the reliable and satisfying way to enjoy classic coffee flavors.",
                 Price = 3.99,
-                HeroImage = "dripcoffee.png",
+                HeroImage = "e_dripcoffee.png",
                 AccentColorStart = Color.FromArgb("#0c293d"),
                 AccentColorEnd = Color.FromArgb("#26abe0"),
                 Images = new ()

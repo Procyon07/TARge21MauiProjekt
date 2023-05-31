@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Views.CoffeesPage"
              xmlns:models="clr-namespace:Models"
-             Title="CoffeesPage">
+             Title="Coffees Page">
     <Grid
         IgnoreSafeArea="{OnPlatform Android=False, iOS=True}">
 
@@ -82,11 +82,11 @@
 
                 <Label
                     Style="{StaticResource PageHeaderStyle}"
-                    Text="Let's Explore"/>
+                    Text="The World of Coffees" FontAttributes="Bold" FontSize="24"
+                    VerticalOptions="Center" TextColor="White"/>
 
                 <Label
-                    Style="{StaticResource PageHeaderSubtitleStyle}"
-                    Text="The World of Coffee!"/>
+                    Text="Please take a look at our products below: " TextColor="White"/>
 
             </VerticalStackLayout>
 
@@ -96,24 +96,22 @@
                 VerticalOptions="Center"
                 HorizontalOptions="End"
                 Stroke="{StaticResource LightBorderColor}"
-                StrokeThickness="6"
+                StrokeThickness="4"
                 Grid.Row="0"
-                Grid.Column="1">
+                Grid.Column="2">
 
                 <Border.StrokeShape>
-                    <RoundRectangle CornerRadius="28"/>
+                    <RoundRectangle CornerRadius="28" />
                 </Border.StrokeShape>
 
-                <Border.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="ProfilePic_Clicked" />
-                </Border.GestureRecognizers>
+
 
                 <Image
                     VerticalOptions="Center"
                     HorizontalOptions="Center"
-                    WidthRequest="50"
-                    HeightRequest="50"
-                    Source="profilepic.jpeg">
+                    WidthRequest="90"
+                    HeightRequest="80"
+                    Source="profilepic.png">
                     <Image.Clip>
                         <EllipseGeometry
                             Center="25,25"
@@ -140,18 +138,18 @@
                         Margin="0,12,0,0">
                         <Label.FormattedText>
                             <FormattedString>
-                                <Span Text="Most Popular   " />
-                                <Span Text="→" FontSize="20" />
+                                <Span Text="Client favourites   " FontAttributes="Bold" TextColor="White"/>
+                                <Span Text="→" FontSize="30" FontAttributes="Bold" />
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>
 
                     <CollectionView
                         x:Name="lstPopularCoffees"
-                        HeightRequest="280"
+                        HeightRequest="180"
                         SelectionMode="Single"
-                        SelectionChanged="Coffees_SelectionChanged"                       
-                        >
+                        SelectionChanged="Coffees_SelectionChanged">
+                        
                         <CollectionView.ItemsLayout>
                             <LinearItemsLayout
                                 Orientation="Horizontal"
@@ -163,17 +161,18 @@
                                 x:DataType="models:Coffee">
                                 <Border
                                     VerticalOptions="Fill"
-                                    WidthRequest="250"
+                                    WidthRequest="220"
+                                    Background="{Binding Background}"
                                     StrokeThickness="0"
-                                    Padding="10">
+                                    Padding="20">
 
                                     <Border.StrokeShape>
-                                        <RoundRectangle CornerRadius="12"/>
+                                        <RoundRectangle CornerRadius="24"/>
                                     </Border.StrokeShape>
 
                                     <Grid
                                         RowDefinitions="*,Auto,Auto"
-                                        RowSpacing="2">
+                                        RowSpacing="4">
 
                                         <Image
                                             Grid.Row="0"
@@ -186,9 +185,8 @@
                                             Grid.Row="1"
                                             Style="{StaticResource FeaturedCoffeeHeaderStyle}"
                                             Text="{Binding Name}"
-                                            Margin="0,5,0,10"
-                                            HorizontalTextAlignment="Center"
-                                            />
+                                            Margin="0,8,0,0"
+                                            HorizontalTextAlignment="Center"/>
 
 
                                     </Grid>
@@ -205,8 +203,8 @@
                         Margin="0,12,0,0">
                         <Label.FormattedText>
                             <FormattedString>
-                                <Span Text="You may also like   "  />
-                                <Span Text="→" FontSize="20" />
+                                <Span Text="Worth to try   " FontAttributes="Bold" TextColor="White" />
+                                <Span Text="→" FontSize="30" FontAttributes="Bold" />
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>
@@ -228,9 +226,10 @@
                                 x:DataType="models:Coffee">
                                 <Border
                                     VerticalOptions="Fill"
-                                    WidthRequest="200"
+                                    WidthRequest="140"
                                     StrokeThickness="0"
-                                    Padding="4">
+                                    Background="{Binding Background}"
+                                    Padding="16">
 
                                     <Border.StrokeShape>
                                         <RoundRectangle CornerRadius="16"/>
@@ -268,7 +267,7 @@
 
             <Border
                 Padding="16,0"
-                BackgroundColor="#393965"
+                BackgroundColor="SandyBrown"
                 Stroke="{StaticResource BorderColor}"
                 HorizontalOptions="Fill"
                 VerticalOptions="End"
@@ -292,7 +291,7 @@
                     <Image
                         WidthRequest="30"
                         HeightRequest="30"
-                        Source="imgfavorite.png"
+                        Source="e_heart.png"
                         Grid.Row="0"
                         Grid.Column="0"
                         HorizontalOptions="Center"/>
@@ -315,7 +314,7 @@
                     <Image
                         WidthRequest="30"
                         HeightRequest="30"
-                        Source="history.png"
+                        Source="e_questionmark.png"
                         Grid.Row="0"
                         Grid.Column="1"
                         HorizontalOptions="Center" />
