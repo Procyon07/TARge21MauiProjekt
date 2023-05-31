@@ -91,7 +91,8 @@
 	  <None Remove="Resources\Images\kohvi6.jpg" />
 	  <None Remove="Resources\Images\kohvi7.jpg" />
 	  <None Remove="Resources\Images\kohvi8.jpg" />
-	  <None Remove="Resources\Images\kohvi9.jpg" />
+    <None Remove="Resources\Images\kohvi9.jpg" />
+
 	</ItemGroup>
 
 	<ItemGroup>
