@@ -87,6 +87,11 @@
 	  <None Remove="Resources\Images\kohvi2.jpg" />
 	  <None Remove="Resources\Images\kohvi3.jpg" />
 	  <None Remove="Resources\Images\kohvi4.jpg" />
+	  <None Remove="Resources\Images\kohvi5.jpg" />
+	  <None Remove="Resources\Images\kohvi6.jpg" />
+	  <None Remove="Resources\Images\kohvi7.jpg" />
+	  <None Remove="Resources\Images\kohvi8.jpg" />
+	  <None Remove="Resources\Images\kohvi9.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
