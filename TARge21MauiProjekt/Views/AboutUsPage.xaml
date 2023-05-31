@@ -3,11 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Views.AboutUsPage"
              Title="AboutUsPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+    <Grid
+        Margin="24,52,24,0"
+        IgnoreSafeArea="{OnPlatform Android=False, iOS=True}"
+        ColumnDefinitions="*,*"
+        RowDefinitions="Auto,*">
+
         <ImageButton
             WidthRequest="24"
             HeightRequest="24"
@@ -17,5 +18,178 @@
             HorizontalOptions="Start"
             VerticalOptions="Center"
             Clicked="BackButton_Clicked" />
-    </VerticalStackLayout>
+
+        <ImageButton
+            WidthRequest="24"
+            HeightRequest="24"
+            Source="imgmenu.png"
+            Grid.Row="0"
+            Grid.Column="1"
+            HorizontalOptions="End"
+            VerticalOptions="Center" />
+
+        <ScrollView
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            HorizontalScrollBarVisibility="Never"
+            VerticalScrollBarVisibility="Never"
+            Margin="0,16,0,0">
+
+            <VerticalStackLayout>
+                <Image Source="kohvi.jpg" 
+                       Aspect="AspectFit"
+                       HorizontalOptions="Fill"
+                       HeightRequest="240"
+                       Margin="24,0" />
+                <Label 
+                    Style="{StaticResource CoffeeHeaderStyle}"
+                    Text="ABOUT US" 
+                    FontAttributes="Bold"
+                    FontSize="24" 
+                    HorizontalOptions="Center" 
+                    Margin="0,24,0,30"/>
+
+                <Rectangle
+                    HorizontalOptions="Fill"
+                    HeightRequest="2"
+                    Stroke="Transparent"
+                    Fill="{StaticResource LightBorderColor}" />
+
+                <Label 
+                    Style="{StaticResource CoffeeDetailsTextStyle}"
+                    LineBreakMode="WordWrap"
+                    HorizontalOptions="Center" 
+                    Margin="30,30,30,30">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Welcome to our Coffee Shop, where passion for coffee meets exceptional taste. We are dedicated to providing the finest coffee experience and creating a cozy atmosphere for coffee enthusiasts like you." FontAttributes="Bold" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Rectangle
+                    HorizontalOptions="Fill"
+                    HeightRequest="2"
+                    Stroke="Transparent"
+                    Fill="{StaticResource LightBorderColor}" />
+
+                <Label 
+                    Style="{StaticResource CoffeeDetailsTextStyle}"
+                    LineBreakMode="WordWrap"
+                    HorizontalOptions="Center" 
+                    Margin="30,30,30,30">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="You can find us at the following address: Coffee Delights 1, 1234 Tallinn, Estonia  " FontAttributes="Bold" TextColor="Plum" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Rectangle
+                    HorizontalOptions="Fill"
+                    HeightRequest="2"
+                    Stroke="Transparent"
+                    Fill="{StaticResource LightBorderColor}" />
+
+                <Label 
+                    Style="{StaticResource CoffeeDetailsTextStyle}"
+                    LineBreakMode="WordWrap"
+                    HorizontalOptions="Center" 
+                    Margin="30,20,20,30">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Our Story" FontAttributes="Bold" TextColor="Plum" />
+                            <Span Text=":  " />
+                            <Span Text="Founded in 2022, Our Coffee Shop has quickly become a beloved destination for coffee lovers in the community. It all started with a simple dream: to serve the perfect cup of coffee that brings joy and warmth to our customers' lives." />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Image 
+                    Source="kohvi1.jpg"
+                    Aspect="AspectFill"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill"
+                    WidthRequest="360"
+                    HeightRequest="360"/>
+
+                <Label 
+                    Style="{StaticResource CoffeeDetailsTextStyle}"
+                    LineBreakMode="WordWrap"
+                    HorizontalOptions="Center" 
+                    Margin="30,20,20,30">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Cozy Ambience and Personalized Service" FontAttributes="Bold" TextColor="Plum" />
+                            <Span Text=":  " />
+                            <Span Text="Step into our coffee shop and experience a warm and inviting ambiance. Our comfortable seating areas, soft lighting, and soothing background music create the perfect setting for relaxation and conversation. Our friendly staff is always ready to greet you with a smile and provide personalized recommendations based on your preferences." />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Image 
+                    Source="kohvi2.jpg"
+                    Aspect="AspectFill"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill"
+                    WidthRequest="360"
+                    HeightRequest="360"/>
+
+                <Label 
+                    Style="{StaticResource CoffeeDetailsTextStyle}"
+                    LineBreakMode="WordWrap"
+                    HorizontalOptions="Center" 
+                    Margin="30,20,20,30">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="A Variety of Flavors and Blends" FontAttributes="Bold" TextColor="Plum" />
+                            <Span Text=":  " />
+                            <Span Text="At Our Coffee Shop, we take pride in offering an extensive selection of coffee flavors and blends to suit every taste. From rich and bold espresso shots to smooth and creamy lattes, our menu is designed to satisfy all coffee cravings. We also feature seasonal specialties and unique creations that showcase our dedication to innovation and creativity." />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Image 
+                    Source="kohvi3.jpg"
+                    Aspect="AspectFill"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill"
+                    WidthRequest="360"
+                    HeightRequest="360"/>
+
+                <Label 
+                    Style="{StaticResource CoffeeDetailsTextStyle}"
+                    LineBreakMode="WordWrap"
+                    HorizontalOptions="Center" 
+                    Margin="30,20,20,30">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Community and Connection" FontAttributes="Bold" TextColor="Plum"/>
+                            <Span Text=":  " />
+                            <Span Text="At the heart of Our Coffee Shop is a sense of community. We believe in fostering connections and creating a space where people can come together, share stories, and build relationships. Whether you're catching up with old friends or meeting new ones, our coffee shop is a gathering place for connection and camaraderie." />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Image 
+                    Source="kohvi4.jpg"
+                    Aspect="AspectFill"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill"
+                    WidthRequest="360"
+                    HeightRequest="360"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
 </ContentPage>
